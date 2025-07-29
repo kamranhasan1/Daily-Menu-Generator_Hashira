@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Menu Generator</h1>
+        <div class="controls">
+            <div class="date-picker">
+                <label for="date-input">Select a date:</label>
+                <input type="date" id="date-input">
+            </div>
+            <div class="day-selector">
+                <label for="day-select">Or select a day:</label>
+                <select id="day-select">
+                    <option value="">-- Select Day --</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="duration-selector">
+                <label>Menu Duration:</label>
+                <div class="toggle-options">
+                    <button id="3day-btn" class="active">3 Days</button>
+                    <button id="7day-btn">7 Days</button>
+                </div>
+            </div>
+            <button id="generate-btn">Generate Menu</button>
+        </div>
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="menu-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
